@@ -29,6 +29,12 @@ git clone https://github.com/codalanguez/CodaComfy-Nodes.git custom_nodes/CodaCo
 
 Templates 03, 06 and 07 contain placeholder filenames. Choose your own files with the upload controls before running. [Download just the seven workflow files](https://github.com/codalanguez/CodaComfy-Nodes/releases/latest/download/CodaComfy-Workflows.zip).
 
+### The Fairest book trailer
+
+This 22-second example of the **Full book trailer** workflow joins three scenes set in Thornfield with a narrated title card. One score runs beneath the dialogue. [Watch the finished trailer](https://codemonkeyarts.com/codacomfy-nodes/#book-trailer).
+
+[Download The Fairest workflow and guide image (ZIP)](https://raw.githubusercontent.com/codalanguez/CodaComfy-Nodes/main/docs/examples/codacomfy-the-fairest-workflow.zip). Unzip the bundle, copy `thornfield-guide.jpg` into your ComfyUI `input` folder, and open `The Fairest - Full Book Trailer.json`. Edit the character cards to change who speaks, then change the written and spoken title for your own book.
+
 ## Working with the nodes
 
 - **Video and models.** Use **Refresh available models** on a generation node to load the provider catalog. Choose a model, then a supported shot length. Model availability, frame support and native audio vary by provider. The credit control shows the balance reported for the configured account.
