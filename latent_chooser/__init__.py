@@ -1,0 +1,1 @@
+"""Interactive latent batch chooser."""

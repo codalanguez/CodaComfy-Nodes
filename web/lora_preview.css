@@ -1,0 +1,50 @@
+.coda-lora-dialog { width:min(1100px,94vw); max-width:94vw; height:min(760px,90vh); max-height:90vh; padding:16px; border:1px solid #526078; border-radius:14px; background:#171d27; color:#edf2fa; box-shadow:0 24px 100px #0009; font:14px system-ui; }
+.coda-lora-dialog[open] { display:flex; flex-direction:column; gap:12px; }
+.coda-lora-dialog::backdrop { background:#0009; }
+.coda-lora-toolbar { display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+.coda-lora-folder-bar { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+.coda-lora-folder-levels { display:flex; align-items:center; gap:8px; flex:1; flex-wrap:wrap; }
+.coda-lora-select { max-width:240px; padding:8px; border:1px solid #526078; border-radius:7px; background:#0e141e; color:#edf2fa; font:inherit; }
+.coda-lora-recursive { display:flex; align-items:center; gap:6px; font-size:12px; white-space:nowrap; }
+.coda-lora-pagination { display:flex; align-items:center; justify-content:center; gap:12px; flex-wrap:wrap; }
+.coda-lora-page-label { min-width:100px; text-align:center; font-variant-numeric:tabular-nums; }
+.coda-lora-toolbar strong { font-size:18px; }
+.coda-lora-search { flex:1; min-width:160px; padding:10px 12px; border:1px solid #526078; border-radius:7px; background:#0e141e; color:#edf2fa; }
+.coda-lora-button { cursor:pointer; border:1px solid #526078; border-radius:7px; background:#29354a; color:#edf2fa; padding:8px 12px; font:inherit; }
+.coda-lora-button:hover { background:#3b4d6b; }
+.coda-lora-button:focus-visible,.coda-lora-search:focus-visible,.coda-lora-list:focus-visible { outline:2px solid #99c6ff; outline-offset:2px; }
+.coda-lora-button:disabled { opacity:.45; cursor:default; }
+.coda-lora-browser { display:grid; grid-template-columns:minmax(260px,1.2fr) minmax(220px,1fr); gap:16px; flex:1; min-height:0; }
+.coda-lora-list { overflow:auto; position:relative; border:1px solid #3b4658; border-radius:8px; background:#101721; overscroll-behavior:contain; }
+.coda-lora-spacer { position:relative; }
+.coda-lora-row { position:absolute; left:0; right:0; height:84px; box-sizing:border-box; display:flex; gap:12px; align-items:center; padding:8px; cursor:pointer; border-bottom:1px solid #2a3444; }
+.coda-lora-row:hover { background:#263449; }
+.coda-lora-row.is-active { background:#314664; box-shadow:inset 3px 0 #9acbff; }
+.coda-lora-thumb,.coda-lora-no-thumb { width:64px; height:64px; flex-shrink:0; object-fit:contain; border-radius:5px; background:#080d14; }
+.coda-lora-no-thumb { display:grid; place-items:center; text-align:center; color:#a1afc3; font-size:11px; }
+.coda-lora-row-text { min-width:0; display:flex; flex-direction:column; gap:6px; }
+.coda-lora-row-text strong { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:13px; }
+.coda-lora-row-text small { color:#b0bed1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.coda-lora-image-panel { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; min-height:0; min-width:0; flex:1; overflow:hidden; background:#0d131d; border-radius:8px; padding:10px; box-sizing:border-box; color:#e6edf7; }
+.coda-lora-image { width:100%; min-height:0; flex:1; object-fit:contain; }
+.coda-lora-status { margin:auto; text-align:center; color:#aab9ce; padding:20px; }
+.coda-lora-caption { flex-shrink:0; font:12px system-ui; overflow-wrap:anywhere; text-align:center; max-height:64px; overflow:auto; }
+.coda-lora-nav { display:flex; align-items:center; gap:12px; }
+.coda-lora-summary { flex:1; color:#aab9ce; font-size:12px; }
+.coda-lora-node { display:flex; flex-direction:column; gap:8px; height:100%; width:100%; min-height:370px; font:13px system-ui; }
+.coda-lora-triggers { width:100%; display:flex; flex-direction:column; gap:6px; flex-shrink:0; font:12px system-ui; }
+.coda-lora-trigger-text { width:100%; box-sizing:border-box; resize:none; height:48px; border:1px solid #3b4658; border-radius:5px; padding:6px; background:#171f2b; color:#e6edf7; font:12px system-ui; }
+.coda-lora-dialog [hidden],.coda-lora-node [hidden] { display:none !important; }
+@media(max-width:650px) { .coda-lora-browser { grid-template-columns:1fr 1fr; gap:8px; } .coda-lora-thumb,.coda-lora-no-thumb { width:44px; } }
+.coda-lora-stack { display:flex; flex-direction:column; gap:10px; height:100%; width:100%; min-height:290px; font:13px system-ui; color:#edf2fa; }
+.coda-lora-slots { flex:1; min-height:0; overflow:auto; overscroll-behavior:contain; display:flex; flex-direction:column; gap:10px; }
+.coda-lora-slot { flex-shrink:0; background:#151e2b; border:1px solid #40516b; border-radius:8px; padding:10px; }
+.coda-lora-slot.is-disabled { opacity:.55; }
+.coda-lora-fold { flex-shrink:0; width:26px; padding:6px 0; font-size:16px; }
+.coda-lora-choose { flex:1; min-width:80px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; text-align:left; }
+.coda-lora-slot-content { display:flex; gap:10px; margin-top:10px; }
+.coda-lora-slot-thumb { width:96px; height:125px; object-fit:contain; cursor:pointer; background:#0b111a; border-radius:5px; }
+.coda-lora-slot-controls { flex:1; min-width:0; display:flex; flex-direction:column; gap:6px; }
+.coda-lora-weight { display:flex; align-items:center; gap:6px; }
+.coda-lora-weight input { width:60px; padding:4px; background:#101722; color:#edf2fa; border:1px solid #526078; border-radius:5px; }
+.coda-lora-stack [hidden] { display:none !important; }

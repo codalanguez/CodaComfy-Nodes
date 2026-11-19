@@ -1,0 +1,15 @@
+[project]
+name = "coda-comfy-tools"
+version = "0.2.0"
+description = "ComfyUI nodes for OpenRouter video, dialogue and music, with cast and frame stacks, a LoRA browser, and a latent chooser."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+dependencies = ["torch", "numpy", "Pillow", "aiohttp", "av"]
+
+[project.urls]
+Repository = "https://github.com/codalanguez/CodaComfy-Nodes"
+
+[tool.comfy]
+PublisherId = "codalanguez"
+DisplayName = "CodaComfy Nodes"

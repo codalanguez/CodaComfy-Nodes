@@ -1,0 +1,14 @@
+{
+  "LatentImageChooser": "Latent Image Chooser (Pause)",
+  "CodaLoraStackPreview": "LoRA Stack (Preview + Triggers)",
+  "CodaScreenCharacter": "On-Screen Character",
+  "CodaOnScreenDialogue": "OpenRouter On-Screen Dialogue",
+  "CodaFrameStack": "Frame Stack",
+  "CodaMixDialogueSoundtrack": "Mix Dialogue and Soundtrack",
+  "CodaOpenRouterBalance": "OpenRouter Credit Balance",
+  "CodaOpenRouterPrompt": "OpenRouter Prompt",
+  "CodaOpenRouterModels": "OpenRouter List Models",
+  "CodaOpenRouterVideo": "OpenRouter Generate Video",
+  "CodaOpenRouterSound": "OpenRouter Generate Sound",
+  "CodaOpenRouterDialogue": "OpenRouter Character Dialogue"
+}

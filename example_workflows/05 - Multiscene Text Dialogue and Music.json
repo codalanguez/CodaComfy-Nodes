@@ -1,0 +1,1147 @@
+{
+  "id": "c9979fc4-2cc0-56c2-8b7c-14b75c195969",
+  "revision": 0,
+  "last_node_id": 11,
+  "last_link_id": 10,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "Note",
+      "title": "Using this workflow",
+      "pos": [
+        0,
+        -242
+      ],
+      "size": [
+        790,
+        172
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "Note"
+      },
+      "widgets_values": [
+        "Edit each scene's own location, action, cast and lines. The two text-only scenes are rendered separately, joined in input order, and scored as one piece. The mix level controls music underneath the voices."
+      ],
+      "widgets_values_named": {
+        "text": "Edit each scene's own location, action, cast and lines. The two text-only scenes are rendered separately, joined in input order, and scored as one piece. The mix level controls music underneath the voices."
+      }
+    },
+    {
+      "id": 2,
+      "type": "CodaScreenCharacter",
+      "title": "Jo",
+      "pos": [
+        0,
+        0
+      ],
+      "size": [
+        410,
+        258
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "previous_characters",
+          "type": "CODA_SCREEN_CHARACTER",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "name",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "name"
+          }
+        },
+        {
+          "name": "appearance",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "appearance"
+          }
+        },
+        {
+          "name": "accent",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "accent"
+          }
+        },
+        {
+          "name": "cue",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "cue"
+          }
+        },
+        {
+          "name": "line",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "line"
+          }
+        },
+        {
+          "name": "enabled",
+          "type": "BOOLEAN",
+          "link": null,
+          "shape": 7,
+          "widget": {
+            "name": "enabled"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "character",
+          "type": "CODA_SCREEN_CHARACTER",
+          "links": [
+            1
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CodaScreenCharacter",
+        "cnr_id": "coda-comfy-tools",
+        "ver": "0.2.0"
+      },
+      "widgets_values": [
+        "Jo",
+        "keeper in a yellow oilskin with a cropped silver fringe",
+        "soft Dublin accent",
+        "speaks quietly, watching the lamp",
+        "The lamp's out.",
+        true
+      ],
+      "widgets_values_named": {
+        "name": "Jo",
+        "appearance": "keeper in a yellow oilskin with a cropped silver fringe",
+        "accent": "soft Dublin accent",
+        "cue": "speaks quietly, watching the lamp",
+        "line": "The lamp's out.",
+        "enabled": true
+      }
+    },
+    {
+      "id": 3,
+      "type": "CodaScreenCharacter",
+      "title": "Finn",
+      "pos": [
+        0,
+        325
+      ],
+      "size": [
+        410,
+        258
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "previous_characters",
+          "type": "CODA_SCREEN_CHARACTER",
+          "link": 1,
+          "shape": 7
+        },
+        {
+          "name": "name",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "name"
+          }
+        },
+        {
+          "name": "appearance",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "appearance"
+          }
+        },
+        {
+          "name": "accent",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "accent"
+          }
+        },
+        {
+          "name": "cue",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "cue"
+          }
+        },
+        {
+          "name": "line",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "line"
+          }
+        },
+        {
+          "name": "enabled",
+          "type": "BOOLEAN",
+          "link": null,
+          "shape": 7,
+          "widget": {
+            "name": "enabled"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "character",
+          "type": "CODA_SCREEN_CHARACTER",
+          "links": [
+            2
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CodaScreenCharacter",
+        "cnr_id": "coda-comfy-tools",
+        "ver": "0.2.0"
+      },
+      "widgets_values": [
+        "Finn",
+        "engineer in a navy jumper with round wire glasses",
+        "Welsh accent",
+        "taps the gauge, then looks up",
+        "I've got it.",
+        true
+      ],
+      "widgets_values_named": {
+        "name": "Finn",
+        "appearance": "engineer in a navy jumper with round wire glasses",
+        "accent": "Welsh accent",
+        "cue": "taps the gauge, then looks up",
+        "line": "I've got it.",
+        "enabled": true
+      }
+    },
+    {
+      "id": 4,
+      "type": "CodaOnScreenDialogue",
+      "title": "Lamp room",
+      "pos": [
+        490,
+        0
+      ],
+      "size": [
+        460,
+        430
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "speaker_a",
+          "type": "CODA_SCREEN_CHARACTER",
+          "link": 2,
+          "shape": 7
+        },
+        {
+          "name": "speaker_b",
+          "type": "CODA_SCREEN_CHARACTER",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "first_frame",
+          "type": "IMAGE",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "last_frame",
+          "type": "IMAGE",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "additional_characters",
+          "type": "CODA_SCREEN_CHARACTER",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "frame_stack",
+          "type": "CODA_FRAME_STACK",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "scene",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "scene"
+          }
+        },
+        {
+          "name": "seconds",
+          "type": "COMBO",
+          "link": null,
+          "widget": {
+            "name": "seconds"
+          }
+        },
+        {
+          "name": "take",
+          "type": "INT",
+          "link": null,
+          "widget": {
+            "name": "take"
+          }
+        },
+        {
+          "name": "use_last_frame",
+          "type": "BOOLEAN",
+          "link": null,
+          "shape": 7,
+          "widget": {
+            "name": "use_last_frame"
+          }
+        },
+        {
+          "name": "model",
+          "type": "COMBO",
+          "link": null,
+          "shape": 7,
+          "widget": {
+            "name": "model"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            5
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CodaOnScreenDialogue",
+        "cnr_id": "coda-comfy-tools",
+        "ver": "0.2.0"
+      },
+      "widgets_values": [
+        "A lighthouse keeper and an engineer inspect a stalled lamp. Keep the gauge and each speaking face in view.\n$dialogue $speech_limit Natural synchronized voices. Use ambient sound only. Keep the image free of text.",
+        "6",
+        1,
+        true,
+        "google/veo-3.1-fast"
+      ],
+      "widgets_values_named": {
+        "scene": "A lighthouse keeper and an engineer inspect a stalled lamp. Keep the gauge and each speaking face in view.\n$dialogue $speech_limit Natural synchronized voices. Use ambient sound only. Keep the image free of text.",
+        "seconds": "6",
+        "take": 1,
+        "use_last_frame": true,
+        "model": "google/veo-3.1-fast"
+      }
+    },
+    {
+      "id": 5,
+      "type": "CodaScreenCharacter",
+      "title": "Tess",
+      "pos": [
+        0,
+        740
+      ],
+      "size": [
+        410,
+        258
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "previous_characters",
+          "type": "CODA_SCREEN_CHARACTER",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "name",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "name"
+          }
+        },
+        {
+          "name": "appearance",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "appearance"
+          }
+        },
+        {
+          "name": "accent",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "accent"
+          }
+        },
+        {
+          "name": "cue",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "cue"
+          }
+        },
+        {
+          "name": "line",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "line"
+          }
+        },
+        {
+          "name": "enabled",
+          "type": "BOOLEAN",
+          "link": null,
+          "shape": 7,
+          "widget": {
+            "name": "enabled"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "character",
+          "type": "CODA_SCREEN_CHARACTER",
+          "links": [
+            3
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CodaScreenCharacter",
+        "cnr_id": "coda-comfy-tools",
+        "ver": "0.2.0"
+      },
+      "widgets_values": [
+        "Tess",
+        "harbour pilot wearing a red watch cap",
+        "northern English accent",
+        "squints into the mist before speaking",
+        "There she is.",
+        true
+      ],
+      "widgets_values_named": {
+        "name": "Tess",
+        "appearance": "harbour pilot wearing a red watch cap",
+        "accent": "northern English accent",
+        "cue": "squints into the mist before speaking",
+        "line": "There she is.",
+        "enabled": true
+      }
+    },
+    {
+      "id": 6,
+      "type": "CodaScreenCharacter",
+      "title": "Jo",
+      "pos": [
+        0,
+        1065
+      ],
+      "size": [
+        410,
+        258
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "previous_characters",
+          "type": "CODA_SCREEN_CHARACTER",
+          "link": 3,
+          "shape": 7
+        },
+        {
+          "name": "name",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "name"
+          }
+        },
+        {
+          "name": "appearance",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "appearance"
+          }
+        },
+        {
+          "name": "accent",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "accent"
+          }
+        },
+        {
+          "name": "cue",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "cue"
+          }
+        },
+        {
+          "name": "line",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "line"
+          }
+        },
+        {
+          "name": "enabled",
+          "type": "BOOLEAN",
+          "link": null,
+          "shape": 7,
+          "widget": {
+            "name": "enabled"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "character",
+          "type": "CODA_SCREEN_CHARACTER",
+          "links": [
+            4
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CodaScreenCharacter",
+        "cnr_id": "coda-comfy-tools",
+        "ver": "0.2.0"
+      },
+      "widgets_values": [
+        "Jo",
+        "keeper in a yellow oilskin with a cropped silver fringe",
+        "soft Dublin accent",
+        "speaks quietly, watching the lamp",
+        "Bring her home.",
+        true
+      ],
+      "widgets_values_named": {
+        "name": "Jo",
+        "appearance": "keeper in a yellow oilskin with a cropped silver fringe",
+        "accent": "soft Dublin accent",
+        "cue": "speaks quietly, watching the lamp",
+        "line": "Bring her home.",
+        "enabled": true
+      }
+    },
+    {
+      "id": 7,
+      "type": "CodaOnScreenDialogue",
+      "title": "First light",
+      "pos": [
+        490,
+        740
+      ],
+      "size": [
+        460,
+        430
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "speaker_a",
+          "type": "CODA_SCREEN_CHARACTER",
+          "link": 4,
+          "shape": 7
+        },
+        {
+          "name": "speaker_b",
+          "type": "CODA_SCREEN_CHARACTER",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "first_frame",
+          "type": "IMAGE",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "last_frame",
+          "type": "IMAGE",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "additional_characters",
+          "type": "CODA_SCREEN_CHARACTER",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "frame_stack",
+          "type": "CODA_FRAME_STACK",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "scene",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "scene"
+          }
+        },
+        {
+          "name": "seconds",
+          "type": "COMBO",
+          "link": null,
+          "widget": {
+            "name": "seconds"
+          }
+        },
+        {
+          "name": "take",
+          "type": "INT",
+          "link": null,
+          "widget": {
+            "name": "take"
+          }
+        },
+        {
+          "name": "use_last_frame",
+          "type": "BOOLEAN",
+          "link": null,
+          "shape": 7,
+          "widget": {
+            "name": "use_last_frame"
+          }
+        },
+        {
+          "name": "model",
+          "type": "COMBO",
+          "link": null,
+          "shape": 7,
+          "widget": {
+            "name": "model"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            6
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CodaOnScreenDialogue",
+        "cnr_id": "coda-comfy-tools",
+        "ver": "0.2.0"
+      },
+      "widgets_values": [
+        "On the quay, a pilot and keeper watch a single boat appear in the beam.\n$dialogue $speech_limit Natural synchronized voices. Use ambient sound only. Keep the image free of text.",
+        "6",
+        1,
+        true,
+        "google/veo-3.1-fast"
+      ],
+      "widgets_values_named": {
+        "scene": "On the quay, a pilot and keeper watch a single boat appear in the beam.\n$dialogue $speech_limit Natural synchronized voices. Use ambient sound only. Keep the image free of text.",
+        "seconds": "6",
+        "take": 1,
+        "use_last_frame": true,
+        "model": "google/veo-3.1-fast"
+      }
+    },
+    {
+      "id": 8,
+      "type": "ConcatenateVideo",
+      "title": "Assemble scenes in order",
+      "pos": [
+        1050,
+        0
+      ],
+      "size": [
+        355,
+        160
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "videos.video0",
+          "type": "VIDEO",
+          "link": 5
+        },
+        {
+          "name": "videos.video1",
+          "type": "VIDEO",
+          "link": 6
+        },
+        {
+          "name": "videos.video2",
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "name": "complete_audio",
+          "type": "AUDIO",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "codec",
+          "type": "COMBO",
+          "link": null,
+          "widget": {
+            "name": "codec"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            7,
+            8
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ConcatenateVideo"
+      },
+      "widgets_values": [
+        "auto"
+      ],
+      "widgets_values_named": {
+        "codec": "auto"
+      }
+    },
+    {
+      "id": 9,
+      "type": "CodaOpenRouterSound",
+      "title": "Compose instrumental score",
+      "pos": [
+        1480,
+        0
+      ],
+      "size": [
+        415,
+        300
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "link": 7,
+          "shape": 7
+        },
+        {
+          "name": "model",
+          "type": "COMBO",
+          "link": null,
+          "widget": {
+            "name": "model"
+          }
+        },
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "prompt"
+          }
+        },
+        {
+          "name": "voice",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "voice"
+          }
+        },
+        {
+          "name": "take",
+          "type": "INT",
+          "link": null,
+          "widget": {
+            "name": "take"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "video_with_sound",
+          "type": "VIDEO",
+          "links": []
+        },
+        {
+          "name": "soundtrack",
+          "type": "AUDIO",
+          "links": [
+            9
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CodaOpenRouterSound",
+        "cnr_id": "coda-comfy-tools",
+        "ver": "0.2.0"
+      },
+      "widgets_values": [
+        "google/lyria-3-clip-preview",
+        "Begin with a faint bowed note and a slow pulse. Widen into an open chord as the lighthouse beam returns. Keep the score instrumental and quiet under the voices.",
+        "",
+        1
+      ],
+      "widgets_values_named": {
+        "model": "google/lyria-3-clip-preview",
+        "prompt": "Begin with a faint bowed note and a slow pulse. Widen into an open chord as the lighthouse beam returns. Keep the score instrumental and quiet under the voices.",
+        "voice": "",
+        "take": 1
+      }
+    },
+    {
+      "id": 10,
+      "type": "CodaMixDialogueSoundtrack",
+      "title": "Keep voices above score",
+      "pos": [
+        1955,
+        0
+      ],
+      "size": [
+        320,
+        150
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "dialogue_video",
+          "type": "VIDEO",
+          "link": 8
+        },
+        {
+          "name": "soundtrack",
+          "type": "AUDIO",
+          "link": 9
+        },
+        {
+          "name": "soundtrack_db",
+          "type": "INT",
+          "link": null,
+          "widget": {
+            "name": "soundtrack_db"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "mixed_video",
+          "type": "VIDEO",
+          "links": [
+            10
+          ]
+        },
+        {
+          "name": "mixed_audio",
+          "type": "AUDIO",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CodaMixDialogueSoundtrack",
+        "cnr_id": "coda-comfy-tools",
+        "ver": "0.2.0"
+      },
+      "widgets_values": [
+        -19
+      ],
+      "widgets_values_named": {
+        "soundtrack_db": -19
+      }
+    },
+    {
+      "id": 11,
+      "type": "SaveVideo",
+      "title": "Save final MP4",
+      "pos": [
+        2350,
+        0
+      ],
+      "size": [
+        360,
+        290
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "link": 10
+        },
+        {
+          "localized_name": "filename_prefix",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "format",
+          "name": "format",
+          "type": "COMFY_DYNAMICCOMBO_V3",
+          "widget": {
+            "name": "format"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "codec",
+          "name": "format.codec",
+          "type": "COMFY_DYNAMICCOMBO_V3",
+          "widget": {
+            "name": "format.codec"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "codec",
+          "name": "codec",
+          "shape": 7,
+          "type": "COMFY_DYNAMICCOMBO_V3",
+          "widget": {
+            "name": "codec"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SaveVideo"
+      },
+      "widgets_values": [
+        "CodaComfy/05/Clip",
+        "mp4",
+        "auto",
+        "auto"
+      ],
+      "widgets_values_named": {
+        "filename_prefix": "CodaComfy/05/Clip",
+        "format": "mp4",
+        "format.codec": "auto",
+        "codec": "auto"
+      }
+    }
+  ],
+  "links": [
+    [
+      1,
+      2,
+      0,
+      3,
+      0,
+      "CODA_SCREEN_CHARACTER"
+    ],
+    [
+      2,
+      3,
+      0,
+      4,
+      0,
+      "CODA_SCREEN_CHARACTER"
+    ],
+    [
+      3,
+      5,
+      0,
+      6,
+      0,
+      "CODA_SCREEN_CHARACTER"
+    ],
+    [
+      4,
+      6,
+      0,
+      7,
+      0,
+      "CODA_SCREEN_CHARACTER"
+    ],
+    [
+      5,
+      4,
+      0,
+      8,
+      0,
+      "VIDEO"
+    ],
+    [
+      6,
+      7,
+      0,
+      8,
+      1,
+      "VIDEO"
+    ],
+    [
+      7,
+      8,
+      0,
+      9,
+      0,
+      "VIDEO"
+    ],
+    [
+      8,
+      8,
+      0,
+      10,
+      0,
+      "VIDEO"
+    ],
+    [
+      9,
+      9,
+      1,
+      10,
+      1,
+      "AUDIO"
+    ],
+    [
+      10,
+      10,
+      0,
+      11,
+      0,
+      "VIDEO"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "Scene 1 - Lamp room",
+      "color": "#426c69",
+      "flags": {},
+      "bounding": [
+        -18,
+        -80,
+        986,
+        683
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Scene 2 - The quay",
+      "color": "#4c6470",
+      "flags": {},
+      "bounding": [
+        -18,
+        660,
+        986,
+        683
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Assemble scenes",
+      "color": "#5a6277",
+      "flags": {},
+      "bounding": [
+        1032,
+        -80,
+        391,
+        260
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Generate music and mix",
+      "color": "#625476",
+      "flags": {},
+      "bounding": [
+        1462,
+        -80,
+        831,
+        400
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Export",
+      "color": "#755e4f",
+      "flags": {},
+      "bounding": [
+        2332,
+        -80,
+        396,
+        390
+      ]
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.78,
+      "offset": [
+        55,
+        325
+      ]
+    }
+  },
+  "version": 0.4
+}
